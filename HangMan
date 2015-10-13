@@ -21,10 +21,15 @@ puts "
            |
 --------------------"
 
+def replace
+
+end
+
 puts "Guess a letter!"
 letter = gets.chomp
 if answer.include?(letter)
   puts "CORRECT"
+  replace()
 else
   puts"Incorrect!"
 end
