@@ -1,0 +1,30 @@
+answer = "moose"
+word_length = answer.length
+a = [ ]
+
+word_length.times do
+    a << "#"
+end
+
+puts "Let's play Hangman! #{a.join}"
+
+puts "
+  ----------
+  |        |
+           |
+           |
+           |
+           |
+           |
+           |
+           |
+           |
+--------------------"
+
+puts "Guess a letter!"
+letter = gets.chomp
+if answer.include?(letter)
+  puts "CORRECT"
+else
+  puts"Incorrect!"
+end
